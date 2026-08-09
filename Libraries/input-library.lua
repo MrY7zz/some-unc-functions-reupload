@@ -1,5 +1,5 @@
 -- input-library.lua
--- © 2026 MrY7zz (MIT License)
+-- © 2026 MrY7zz (ISC License)
 
 local VirtualInputManager = VirtualInputManager or Instance.new("VirtualInputManager")
 local UserInputService = UserInputService or game:GetService("UserInputService")
