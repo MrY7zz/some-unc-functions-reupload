@@ -1,14 +1,14 @@
 -- setnamecallmethod.lua
 -- © 2026 MrY7zz (ISC License)
 
-local _Instance = Instance.new("BuoyancySensor")
-_Instance.Destroy(_Instance)
+local _Object = UDim.new()
 
-function setnamecallmethod(method)
+@native
+function setnamecallmethod(method: string): nil
 	if type(method) ~= "string" then
 		return error("invalid argument #1 to 'setnamecallmethod' (string expected, got " .. typeof(method) .. ")")
 	end
-	pcall(loadstring("(...):" .. method .. "()"), _Instance)
+	pcall(loadstring("(...):" .. method .. "()"), _Object)
 end
 
 --[=[
