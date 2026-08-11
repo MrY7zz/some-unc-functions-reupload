@@ -42,4 +42,3 @@ setnamecallmethod("FindFirstChild")
 
 print(namecall(game, "Workspace"))
 ]=]
-
