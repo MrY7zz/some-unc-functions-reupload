@@ -3,13 +3,14 @@
 
 local _Object = newproxy(true)
 rawset(getmetatable(_Object), "__namecall", function() end)
+rawset(getmetatable(_Object), "__metatable", "Locked.")
 
 @native
 function setnamecallmethod(method: string): nil
 	if type(method) ~= "string" then
 		return error("invalid argument #1 to 'setnamecallmethod' (string expected, got " .. typeof(method) .. ")")
 	end
-	pcall(loadstring("(...):" .. method .. "()"), _Object)
+	loadstring("(...):" .. method .. "()"), _Object
 end
 
 --[=[
