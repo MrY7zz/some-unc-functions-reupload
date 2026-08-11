@@ -10,7 +10,7 @@ end, function()
 end)
 
 @native
-function getnamecallmethod(): string -- | nil
+function getnamecallmethod(): string?
 	const _, r = pcall(handler)
 	return r ~= "Argument 1 missing or nil" and string_sub(r, 1, -32) or "Lerp"
 end
