@@ -1,7 +1,8 @@
 -- setnamecallmethod.lua
 -- © 2026 MrY7zz (ISC License)
 
-local _Object = UDim.new()
+local _Object = newproxy(true)
+rawset(getmetatable(_Object), "__namecall", function() end)
 
 @native
 function setnamecallmethod(method: string): nil
