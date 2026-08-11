@@ -93,7 +93,7 @@ end
 
 --// Main function
 @native
-function getcallingscript()
+function getcallingscript(): BaseScript | ModuleScript | nil
 	for i = 2, math_huge do 
 		local src, f = debug_info(i, "sf")
 		if not src then break end
