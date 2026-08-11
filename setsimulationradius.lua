@@ -20,7 +20,7 @@ end, function()
 	__Index = debug.info(2, "f")
 end)
 
-
+@native
 function setsimulationradius(Radius: number, maxRadius: number): nil
 	local LocalPlayer = __Index(Players, "LocalPlayer")
 	
