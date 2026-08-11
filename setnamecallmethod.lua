@@ -10,7 +10,7 @@ function setnamecallmethod(method: string): nil
 	if type(method) ~= "string" then
 		return error("invalid argument #1 to 'setnamecallmethod' (string expected, got " .. typeof(method) .. ")")
 	end
-	loadstring("(...):" .. method .. "()"), _Object
+	loadstring("(...):" .. method .. "()")(_Object)
 end
 
 --[=[
