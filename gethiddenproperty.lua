@@ -15,7 +15,7 @@ end, function()
 end)
 
 @native
-function gethiddenproperty(instance: Instance, property: string): (any?, boolean?)
+function gethiddenproperty(instance: Instance, property: string): (any, boolean)
 	--// First we try to get the property with UGCValidationService
 	--// This won't work every time
 	local success, result = pcall(GetPropertyValue, UGCValidationService, instance, property)
