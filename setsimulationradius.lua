@@ -25,9 +25,9 @@ function setsimulationradius(Radius, maxRadius)
 	local LocalPlayer = __Index(Players, "LocalPlayer")
 	
 	if maxRadius then
-		newIndex(LocalPlayer, "MaximumSimulationRadius", maxRadius)
+		__newIndex(LocalPlayer, "MaximumSimulationRadius", maxRadius)
 	end
-	newIndex(LocalPlayer, "SimulationRadius", Radius)
+	__newIndex(LocalPlayer, "SimulationRadius", Radius)
 end
 
 --[=[
