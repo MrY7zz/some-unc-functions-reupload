@@ -21,7 +21,7 @@ end, function()
 end)
 
 
-function setsimulationradius(Radius, maxRadius)
+function setsimulationradius(Radius: number, maxRadius: number): nil
 	local LocalPlayer = __Index(Players, "LocalPlayer")
 	
 	if maxRadius then
